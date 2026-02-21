@@ -1,5 +1,5 @@
-site_name: Polytoria Scripting Documentation
-copyright: Copyright &copy; 2019 - 2025 Polytoria - <a href="/contributors" class="contributors-link-footer">brought to you by &lt3</a>
+site_name: Polytoria Docs
+copyright: Copyright &copy; 2019 - 2026 Polytoria - <a href="/contributors" class="contributors-link-footer">brought to you by &lt3</a>
 
 theme:
   features:
@@ -10,29 +10,59 @@ theme:
     - navigation.path
     - content.code.annotate
     - content.code.copy
-    - header.autohide
     - navigation.top
     - toc.follow
 
   name: material
   custom_dir: docs/theme
-  logo: assets/logo.svg
+  logo: assets/logo # Not a problem, it auto selects from the logo-dark and logo-light automaticly
+  favicon: assets/logo-dark.svg
 
   font:
     text: Rubik
 
   palette:
-    - scheme: slate
-      primary: blue
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-
-    - scheme: default
-      primary: blue
-      toggle:
-        icon: material/weather-night
+        icon: material/brightness-auto
         name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      toggle:
+        icon: fontawesome/solid/sun
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: dark
+      toggle:
+        icon: fontawesome/solid/moon
+        name: Switch to light mode
+
+  icon:
+    menu: fontawesome/solid/bars
+    previous: fontawesome/solid/angle-left
+    alternate: fontawesome/solid/globe
+    search: fontawesome/solid/search
+    share: fontawesome/solid/share
+    close: fontawesome/solid/x
+    top: fontawesome/solid/chevron-up
+    edit: fontawesome/solid/pencil
+    view: fontawesome/solid/code
+    repo: fontawesome/solid/box-archive
+    admonition:
+      note: fontawesome/solid/pencil
+      abstract: fontawesome/solid/brain
+      info: fontawesome/solid/info-circle
+      tip: fontawesome/solid/fire
+      success: fontawesome/solid/check
+      question: fontawesome/solid/question
+      warning: fontawesome/solid/warning
+      failure: fontawesome/solid/x
+      danger: fontawesome/solid/bolt-lightning
+      bug: fontawesome/solid/bug
+      example: fontawesome/solid/book
+      quote: fontawesome/solid/quote-right
+    next: fontawsome/solid/angle-right
 
 extra:
   generator: true
@@ -70,6 +100,9 @@ markdown_extensions:
 
 extra_css:
   - assets/extra.css
+  - assets/style/palette.css
+  - assets/style/header.css
+  - assets/style/page.css
 
 validation:
   absolute_links: ignore

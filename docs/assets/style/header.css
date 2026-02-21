@@ -1,0 +1,13 @@
+.md-header {
+    box-shadow: none !important;
+    border-bottom: 2px solid var(--md-primary-outline-color);
+}
+
+.md-search__form {
+    background-color: var(--header-panel) !important;
+    border-radius: 6px !important;
+}
+
+.md-search__input::placeholder {
+    color: var(--md-primary-bg-color) !important;
+}

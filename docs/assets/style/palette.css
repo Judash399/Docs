@@ -1,0 +1,100 @@
+[data-md-color-scheme="light"] {
+    --md-typeset-a-color: rgb(51, 89, 184);
+    --md-accent-fg-color: rgb(22, 24, 147);
+
+    --md-default-bg-color: rgb(245, 245, 245);
+
+    /* Header */
+    --md-primary-fg-color: var(--md-default-bg-color);
+    --md-primary-fg-color--dark: var(--md-default-fg-color);
+    --md-primary-bg-color: rgb(31, 31, 31);
+    --md-primary-outline-color: rgb(177, 177, 177);
+
+    /* Footer */
+    --md-footer-bg-color: var(--md-default-bg-color);
+    --md-footer-fg-color: var(--md-default-fg-color);
+    --md-footer-bg-color--dark: var(--md-default-bg-color);
+    --md-footer-fg-color--light: rgb(134, 134, 134);
+    --md-footer-fg-color--lighter: rgb(172, 172, 172);
+
+    /* Code */
+    --md-code-bg-color: var(--panel);
+    --md-code-fg-color: rgb(30, 30, 30);
+
+    --md-code-hl-punctuation-color: rgb(119, 119, 119);
+    --md-code-hl-function-color: rgb(37, 37, 37);
+    --md-code-hl-variable-color: rgb(37, 37, 37);
+    --md-code-hl-comment-color: rgb(167, 167, 167);
+    --md-code-hl-keyword-color: rgb(207, 47, 42);
+    --md-code-hl-string-color: rgb(47, 91, 186);
+    --md-code-hl-number-color: rgb(49, 139, 199);
+    --md-code-hl-name-color: rgb(62, 122, 211);
+    --md-code-hl-operator-color: rgb(119, 119, 119);
+    --md-code-hl-constant-color: rgb(207, 120, 61);
+
+    --md-code-hl-color: rgb(218, 37, 37);
+    --md-code-hl-color--light: rgb(238, 217, 217);
+
+    /* Custom */
+    --panel: rgb(250, 250, 250);
+    --header-panel: rgb(220, 220, 220);
+}
+
+[data-md-color-scheme="dark"] {
+    --md-typeset-a-color: rgb(111, 129, 209);
+    --md-accent-fg-color: rgb(51, 89, 184);
+
+    --md-default-bg-color: rgb(29, 29, 29);
+    --md-default-fg-color: rgb(209, 209, 209);
+    --md-typeset-color: rgb(209, 209, 209);
+    --md-default-fg-color--light: rgb(209, 209, 209);
+    --md-default-fg-color--lighter: var(--md-typeset-color);
+
+    /* Admonition */
+    --md-admonition-fg-color: rgb(209, 209, 209);
+    --md-admonition-bg-color: none;
+
+    /* Header */
+    --md-primary-fg-color: var(--md-default-bg-color);
+    --md-primary-fg-color--dark: var(--md-default-fg-color);
+    --md-primary-bg-color: rgb(255, 255, 255);
+    --md-primary-outline-color: rgb(53, 53, 53);
+
+    /* Footer */
+    --md-footer-bg-color: var(--md-default-bg-color);
+    --md-footer-fg-color: var(--md-default-fg-color);
+    --md-footer-bg-color--dark: var(--md-default-bg-color);
+    --md-footer-fg-color--light: rgb(134, 134, 134);
+    --md-footer-fg-color--lighter: rgb(94, 94, 94);
+
+    /* Code */
+    --md-code-bg-color: var(--panel);
+    --md-code-fg-color: rgb(220, 220, 220);
+
+    --md-code-hl-punctuation-color: rgb(119, 119, 119);
+    --md-code-hl-function-color: rgb(200, 200, 200);
+    --md-code-hl-variable-color: rgb(200, 200, 200);
+    --md-code-hl-comment-color: rgb(133, 133, 133);
+    --md-code-hl-keyword-color: rgb(216, 72, 67);
+    --md-code-hl-string-color: rgb(94, 133, 216);
+    --md-code-hl-number-color: rgb(69, 149, 202);
+    --md-code-hl-name-color: rgb(62, 122, 211);
+    --md-code-hl-operator-color: rgb(177, 177, 177);
+    --md-code-hl-constant-color: rgb(231, 142, 82);
+
+    --md-code-hl-color: rgb(218, 37, 37);
+    --md-code-hl-color--light: rgb(48, 37, 37);
+
+
+    /* Custom */
+    --panel: rgb(36, 36, 36);
+    --header-panel: var(--panel);
+}
+
+[data-md-color-scheme="dark"] .Only-light {
+    display: none !important;
+}
+
+[data-md-color-scheme="light"] .Only-dark {
+    display: none !important;
+}
